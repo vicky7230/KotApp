@@ -19,8 +19,7 @@ class ForecastListAdapter(val weekForecast: ForecastList) : RecyclerView.Adapter
 
     override fun getItemCount(): Int = weekForecast.dailyForecast.size
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ItemHolder =
-            ItemHolder(AppCompatTextView(parent?.context))
+    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ItemHolder = ItemHolder(AppCompatTextView(parent?.context))
 
     class ItemHolder(val textView: AppCompatTextView?) : RecyclerView.ViewHolder(textView)
 }
